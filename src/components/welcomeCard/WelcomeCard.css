@@ -1,0 +1,32 @@
+.welcomeCard {
+    width: 100%;
+    min-height: 220px;
+    max-height: 290px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    background: #F1F1F1;
+    box-shadow: -5px 5px 10px rgba(217, 217, 217, 0.2), 5px -5px 10px rgba(217, 217, 217, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.9), 5px 5px 13px rgba(217, 217, 217, 0.9);
+}
+
+.welcomeCard img {
+    position: absolute;
+    width: 100%;
+    filter: opacity(.8);
+    height: 100%;
+    border-radius: 10px;
+}
+
+.welcomeText {
+    position: absolute;
+    bottom: 1rem;
+    left: .5rem;
+    font-size: clamp(1rem, 1vw, 1.3rem);
+    color: white;
+    font-weight: 400;
+
+    letter-spacing: 2px;
+}

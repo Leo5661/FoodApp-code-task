@@ -1,0 +1,112 @@
+.placeOrder {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--primaryBg);
+}
+
+
+.placeOrder .topBar {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    background-color: #f0f3f3;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+    background: #f0f3f3;
+    box-shadow: 0 1px 3px -1px rgba(174, 174, 192, 0.4);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.placeOrder h2 {
+    flex-grow: 1;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--textPrimary);
+}
+
+.placeOrder .bottomBar {
+    margin-bottom: 1rem;
+    width: 95%;
+    padding: .6rem 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #459EAF 0%, #007991 100%);
+}
+
+.placeOrderBtn {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.placeOrderBtn h2 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.placeOrder .noOfItem {
+    font-size: .8rem;
+    color: white;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28px;
+    width: 28px;
+    border-radius: 50px;
+    background-color: #007991;
+    box-shadow: inset 5px 5px 10px #3d8b9a,
+        inset -5px -5px 10px #4db1c4;
+}
+
+.placeOrder .orderDetails {
+    width: 100%;
+    flex-grow: 1;
+}
+
+.placeOrder .divider {
+    display: flex;
+    margin: 1rem 0;
+    gap: .5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.placeOrder .divider .title {
+    color: var(--textLightBlack);
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.placeOrder .divider .line {
+    flex-grow: 1;
+    filter: opacity(.1);
+    border: solid 1px var(--textLightBlack);
+    border-radius: 10px;
+}
+
+.orderDetails .itemListBox {
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    margin: 1rem;
+    background: #f1f1f1;
+    box-shadow: inset 7px 7px 5px #e3e3e3,
+        inset -7px -7px 5px #ffffff;
+}
+
+.orderDetails .cookingInstruction {
+    font-size: .7rem;
+    text-decoration: underline;
+    color: var(--textLightBlue);
+}
