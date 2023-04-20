@@ -1,11 +1,14 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { BottomNavList } from "../../data/BottomNavList";
 import "./App.css";
 import StoreHome from "../storehome/StoreHome";
 import { useNavigate } from "react-router-dom";
+import CountContext from "../../context/CountContext";
 
 function App() {
   const [isActive, setIsActive] = useState(1);
+  const [totalItemInCart] = useContext(CountContext);
+
   const navgate = useNavigate();
 
   const handelMenuClick = (index) => {
@@ -35,7 +38,18 @@ function App() {
               className={`navItem ${isActive === index ? "active" : ""}`}
               onClick={() => handelMenuClick(index)}
             >
-              <img src={`src/assets/icons/${item}`} alt="Bottom nav icon" />
+              <img
+                className="menuIcon"
+                src={`src/assets/icons/${item.src}`}
+                alt="Bottom nav icon"
+              />
+              <div
+                className={`badge ${
+                  item.badge && totalItemInCart != 0 ? "showBadge" : ""
+                }`}
+              >
+                {`${totalItemInCart}`}
+              </div>
             </div>
           );
         })}
