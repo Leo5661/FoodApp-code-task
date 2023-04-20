@@ -1,13 +1,66 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./MainItemCard.css";
 import veg from "../../assets/icons/veg.png";
 import nonVeg from "../../assets/icons/non_veg.png";
 import AddButton from "../addButton/AddButton";
 import CountContext from "../../context/CountContext";
 
-function MainItemCard({ src, itemName, itemPrice, isVeg }) {
+function MainItemCard({ src, itemName, itemPrice, isVeg, id }) {
   let [count, setCount] = useState(0);
   let [totalCount, setTotalCount] = useContext(CountContext);
+
+  const [alredypresent, setIsAlreadyPresent] = useState(false);
+
+  const addToLocal = (list) => {
+    list.push({
+      id: id,
+      name: itemName,
+      price: itemPrice,
+      isVeg: isVeg,
+      count: count,
+    });
+    localStorage.setItem("curentItem", JSON.stringify(list));
+  };
+
+  useEffect(() => {
+    const items = JSON.parse(localStorage.getItem("curentItem") || `[]`);
+
+    if (items.length !== 0) {
+      for (const item of items) {
+        if (item.id === id) {
+          setCount(item.count);
+          return;
+        } else {
+          return;
+        }
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    const items = JSON.parse(localStorage.getItem("curentItem") || `[]`);
+    let index;
+
+    if (items.length !== 0) {
+      for (const item of items) {
+        if (item.id === id) {
+          setIsAlreadyPresent(true);
+          index = items.findIndex((item) => item.id === id);
+          items.splice(index, 1);
+          addToLocal(items);
+          return;
+        } else {
+        }
+      }
+    } else if (items.length === 0 && count !== 0) {
+      addToLocal(items);
+      return;
+    }
+
+    if (items.length !== 0 && !alredypresent && count !== 0) {
+      addToLocal(items);
+    }
+  }, [count]);
 
   const handelButtonClick = () => {
     count++;

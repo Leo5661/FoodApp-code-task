@@ -24,6 +24,7 @@ function MainTab() {
                     itemName={item.itemName}
                     itemPrice={item.itemPrice}
                     isVeg={item.isVeg}
+                    id={item.id}
                   />
                 );
               })}
