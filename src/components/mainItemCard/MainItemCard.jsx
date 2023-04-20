@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./MainItemCard.css";
 import veg from "../../assets/icons/veg.png";
 import nonVeg from "../../assets/icons/non_veg.png";
+import AddButton from "../addButton/AddButton";
 
 function MainItemCard({ src, itemName, itemPrice, isVeg }) {
+  let [count, setCount] = useState(0);
+
+  const handelButtonClick = () => {
+    count++;
+    setCount(count);
+  };
+
+  const handelNegativeClick = () => {
+    count--;
+    setCount(count);
+  };
+
   return (
     <div className="MainMenuCard">
-      <img src={`src/assets/${src}`} alt="Food banner" />
+      <img className="foodIcon" src={`src/assets/${src}`} alt="Food banner" />
       <div className="details">
         <div className="itemName">
           <span>{<img src={`${isVeg ? veg : nonVeg}`} />}</span>
@@ -16,14 +29,12 @@ function MainItemCard({ src, itemName, itemPrice, isVeg }) {
           <div className="price">
             <span>&#8377;</span> {itemPrice}
           </div>
-          <button
-            className="addButton"
-            onClick={() => {
-              console.log(`Add button clicked`);
-            }}
-          >
-            Add
-          </button>
+          <AddButton
+            count={count}
+            onClick={handelButtonClick}
+            onNegativeClick={handelNegativeClick}
+            onPositiveClick={handelButtonClick}
+          />
         </div>
       </div>
     </div>

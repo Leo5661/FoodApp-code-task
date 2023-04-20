@@ -1,0 +1,36 @@
+.addButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    margin: .3rem;
+    font-size: .8rem;
+    border-radius: 10px;
+    background: #F0F0F3;
+    box-shadow: 8px 5px 10px #cacacc,
+        -8px -5px 10px #ffffff;
+}
+
+.initialBtn {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.markerBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #d8d8db, #ffffff);
+    box-shadow: 0px 5px 5px #dfdfe2,
+        0px 0px 5px #ffffff;
+}
+
+.addButton .markerBox .marker {
+    flex-grow: 0;
+    width: .5rem;
+}

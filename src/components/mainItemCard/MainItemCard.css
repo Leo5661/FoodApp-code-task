@@ -10,7 +10,7 @@
         inset -7px -7px 15px #ffffff;
 }
 
-.MainMenuCard img {
+.MainMenuCard .foodIcon {
     width: 70px;
     height: 70px;
     margin: .5rem;

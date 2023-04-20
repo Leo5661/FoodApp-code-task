@@ -7,9 +7,9 @@ import { MainMenuList } from "../../data/MainMenuList";
 function MainTab() {
   return (
     <div className="mainTab">
-      {MainMenuList.map((item) => {
+      {MainMenuList.map((item, index) => {
         return (
-          <div className="category">
+          <div key={index} className="category">
             <div className="divider">
               <div className="title">{item.category}</div>
               <div className="line"></div>

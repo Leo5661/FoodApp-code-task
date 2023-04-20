@@ -11,7 +11,7 @@
         inset -7px -7px 5px #ffffff;
 }
 
-.specialMenuCard img {
+.specialMenuCard .banner {
     flex-grow: 1;
     width: 100%;
     filter: opacity(.8);

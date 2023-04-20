@@ -8,7 +8,6 @@ function TabContainer() {
   const [activeTab, setActiveTab] = useState(0);
 
   const handelTabClick = (index) => {
-    console.log(index);
     setActiveTab(index);
   };
 
@@ -33,11 +32,7 @@ function TabContainer() {
             case 0:
               return <SpecialTab />;
             case 1:
-              return (
-                <>
-                  <MainTab />
-                </>
-              );
+              return <MainTab />;
             case 2:
               return <div>This is third tab</div>;
             case 3:

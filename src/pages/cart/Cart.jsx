@@ -22,13 +22,8 @@ function Cart() {
   return (
     <div className="placeOrder">
       <div className="topBar">
-        <div className="menuBtn marginLeft">
-          <img
-            className="logoImg"
-            src={leftArrow}
-            alt="back button"
-            onClick={handelBackClick}
-          />
+        <div className="menuBtn marginLeft" onClick={handelBackClick}>
+          <img className="logoImg" src={leftArrow} alt="back button" />
         </div>
         <h2>Sacred Earth Cafe</h2>
         <div className="menuBtn marginRight">
