@@ -1,20 +1,26 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./MainItemCard.css";
 import veg from "../../assets/icons/veg.png";
 import nonVeg from "../../assets/icons/non_veg.png";
 import AddButton from "../addButton/AddButton";
+import CountContext from "../../context/CountContext";
 
 function MainItemCard({ src, itemName, itemPrice, isVeg }) {
   let [count, setCount] = useState(0);
+  let [totalCount, setTotalCount] = useContext(CountContext);
 
   const handelButtonClick = () => {
     count++;
+    totalCount++;
     setCount(count);
+    setTotalCount(totalCount);
   };
 
   const handelNegativeClick = () => {
     count--;
     setCount(count);
+    totalCount++;
+    setTotalCount(totalCount);
   };
 
   return (
