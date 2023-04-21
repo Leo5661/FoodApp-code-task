@@ -19,11 +19,11 @@ function MainItemCard({ src, itemName, itemPrice, isVeg, id }) {
       isVeg: isVeg,
       count: count,
     });
-    localStorage.setItem("curentItem", JSON.stringify(list));
+    localStorage.setItem("currentItem", JSON.stringify(list));
   };
 
   useEffect(() => {
-    const items = JSON.parse(localStorage.getItem("curentItem") || `[]`);
+    const items = JSON.parse(localStorage.getItem("currentItem") || `[]`);
 
     if (items.length !== 0) {
       for (const item of items) {
@@ -38,7 +38,7 @@ function MainItemCard({ src, itemName, itemPrice, isVeg, id }) {
   }, []);
 
   useEffect(() => {
-    const items = JSON.parse(localStorage.getItem("curentItem") || `[]`);
+    const items = JSON.parse(localStorage.getItem("currentItem") || `[]`);
     let index;
 
     if (items.length !== 0) {

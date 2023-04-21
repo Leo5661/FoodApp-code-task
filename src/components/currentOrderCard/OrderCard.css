@@ -1,0 +1,46 @@
+.orderItemCard {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.itemDetails {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.itemDetails .typeOfFood {
+    width: 1rem;
+    height: 1rem;
+}
+
+.itemDetails .nameAndPrice {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.itemDetails .nameAndPrice .name {
+    font-size: .9rem;
+    color: var(--textLightBlack);
+}
+
+.itemDetails .nameAndPrice .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    font-size: .9rem;
+    font-weight: bold;
+    color: var(--textGray);
+}
+
+.quantity {
+    font-weight: bold;
+    font-size: .9rem;
+    color: var(--textLightBlack);
+}
