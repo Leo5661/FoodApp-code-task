@@ -22,7 +22,7 @@ export const SpecialMenuList = [
   },
   {
     id: 4,
-    src: () => <img className="banner" src={`food4.jpg`} alt="Food banner" />,
+    src: () => <img className="banner" src={`food1.jpg`} alt="Food banner" />,
     itemName: "Chicken Tikka Bowl",
     itemPrice: "299",
     isVeg: false,
