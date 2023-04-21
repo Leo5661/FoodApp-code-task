@@ -5,11 +5,7 @@ export const MainMenuList = [
       {
         id: 9,
         src: () => (
-          <img
-            className="foodIcon"
-            src={`src/assets/food6.png`}
-            alt="Food banner"
-          />
+          <img className="foodIcon" src={`food6.png`} alt="Food banner" />
         ),
         itemName: "Chocolate Bowl",
         itemPrice: "299",
@@ -18,11 +14,7 @@ export const MainMenuList = [
       {
         id: 10,
         src: () => (
-          <img
-            className="foodIcon"
-            src={`src/assets/food2.webp`}
-            alt="Food banner"
-          />
+          <img className="foodIcon" src={`food2.webp`} alt="Food banner" />
         ),
 
         itemName: "Sunset Acai Bowl",
@@ -32,11 +24,7 @@ export const MainMenuList = [
       {
         id: 11,
         src: () => (
-          <img
-            className="foodIcon"
-            src={`src/assets/food3.webp`}
-            alt="Food banner"
-          />
+          <img className="foodIcon" src={`food3.webp`} alt="Food banner" />
         ),
 
         itemName: "Paneer Tikka Bowl",
@@ -52,11 +40,7 @@ export const MainMenuList = [
       {
         id: 12,
         src: () => (
-          <img
-            className="foodIcon"
-            src={`src/assets/food6.png`}
-            alt="Food banner"
-          />
+          <img className="foodIcon" src={`food6.png`} alt="Food banner" />
         ),
 
         itemName: "Chocolate Bowl",
@@ -66,11 +50,7 @@ export const MainMenuList = [
       {
         id: 13,
         src: () => (
-          <img
-            className="foodIcon"
-            src={`src/assets/food2.webp`}
-            alt="Food banner"
-          />
+          <img className="foodIcon" src={`food2.webp`} alt="Food banner" />
         ),
 
         itemName: "Sunset Acai Bowl",
@@ -80,11 +60,7 @@ export const MainMenuList = [
       {
         id: 14,
         src: () => (
-          <img
-            className="foodIcon"
-            src={`src/assets/food3.webp`}
-            alt="Food banner"
-          />
+          <img className="foodIcon" src={`food3.webp`} alt="Food banner" />
         ),
 
         itemName: "Paneer Tikka Bowl",
@@ -99,11 +75,7 @@ export const MainMenuList = [
       {
         id: 15,
         src: () => (
-          <img
-            className="foodIcon"
-            src={`src/assets/food6.png`}
-            alt="Food banner"
-          />
+          <img className="foodIcon" src={`food6.png`} alt="Food banner" />
         ),
         itemName: "Chocolate Bowl",
         itemPrice: "299",
@@ -112,11 +84,7 @@ export const MainMenuList = [
       {
         id: 16,
         src: () => (
-          <img
-            className="foodIcon"
-            src={`src/assets/food2.webp`}
-            alt="Food banner"
-          />
+          <img className="foodIcon" src={`food2.webp`} alt="Food banner" />
         ),
 
         itemName: "Sunset Acai Bowl",
@@ -126,11 +94,7 @@ export const MainMenuList = [
       {
         id: 17,
         src: () => (
-          <img
-            className="foodIcon"
-            src={`src/assets/food3.webp`}
-            alt="Food banner"
-          />
+          <img className="foodIcon" src={`food3.webp`} alt="Food banner" />
         ),
 
         itemName: "Paneer Tikka Bowl",
@@ -146,11 +110,7 @@ export const MainMenuList = [
       {
         id: 18,
         src: () => (
-          <img
-            className="foodIcon"
-            src={`src/assets/food6.png`}
-            alt="Food banner"
-          />
+          <img className="foodIcon" src={`food6.png`} alt="Food banner" />
         ),
 
         itemName: "Chocolate Bowl",
@@ -160,11 +120,7 @@ export const MainMenuList = [
       {
         id: 19,
         src: () => (
-          <img
-            className="foodIcon"
-            src={`src/assets/food2.webp`}
-            alt="Food banner"
-          />
+          <img className="foodIcon" src={`food2.webp`} alt="Food banner" />
         ),
 
         itemName: "Sunset Acai Bowl",
@@ -174,11 +130,7 @@ export const MainMenuList = [
       {
         id: 20,
         src: () => (
-          <img
-            className="foodIcon"
-            src={`src/assets/food3.webp`}
-            alt="Food banner"
-          />
+          <img className="foodIcon" src={`food3.webp`} alt="Food banner" />
         ),
 
         itemName: "Paneer Tikka Bowl",

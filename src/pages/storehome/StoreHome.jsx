@@ -1,8 +1,8 @@
 import React from "react";
 import "./StoreHome.css";
-import logo from "../../assets/icons/logo.png";
-import voice from "../../assets/icons/voice.png";
-import hashTag from "../../assets/icons/hash_tag.png";
+import logo from "/icons/logo.png";
+import voice from "/icons/voice.png";
+import hashTag from "/icons/hash_tag.png";
 import TabContainer from "../../components/tabContainer/TabContainer";
 
 function StoreHome() {

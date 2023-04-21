@@ -3,7 +3,7 @@ export const BottomNavList = [
     src: () => (
       <img
         className="menuIcon"
-        src={`src/assets/icons/bolt.png`}
+        src={`./icons/bolt.png`}
         alt="Bottom nav icon"
       />
     ),
@@ -14,7 +14,7 @@ export const BottomNavList = [
     src: () => (
       <img
         className="menuIcon"
-        src={`src/assets/icons/book_open.png`}
+        src={`./icons/book_open.png`}
         alt="Bottom nav icon"
       />
     ),
@@ -25,7 +25,7 @@ export const BottomNavList = [
     src: () => (
       <img
         className="menuIcon"
-        src={`src/assets/icons/shopping_bag.png`}
+        src={`./icons/shopping_bag.png`}
         alt="Bottom nav icon"
       />
     ),

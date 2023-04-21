@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./Cart.css";
-import leftArrow from "../../assets/icons/left_arrow.png";
-import rightArrow from "../../assets/icons/right_arrow.png";
-import iconWaiter from "../../assets/icons/icon-waiter.png";
+import leftArrow from "/icons/left_arrow.png";
+import rightArrow from "/icons/right_arrow.png";
+import iconWaiter from "/icons/icon-waiter.png";
 import { useNavigate } from "react-router-dom";
-import UpArrow from "../../assets/icons/up_arrow.png";
+import UpArrow from "/icons/up_arrow.png";
 import CountContext from "../../context/CountContext";
-import OrderCard from "../../components/currentOrderCard/OrderCard";
+import OrderCard from "../../components/orderCard/OrderCard";
 
 function Cart() {
   let [count, setCount] = useState(0);

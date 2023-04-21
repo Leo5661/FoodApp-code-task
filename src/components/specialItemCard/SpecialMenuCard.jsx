@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./SpecialMenuCard.css";
-import veg from "../../assets/icons/veg.png";
-import nonVeg from "../../assets/icons/non_veg.png";
+import veg from "/icons/veg.png";
+import nonVeg from "/icons/non_veg.png";
 import AddButton from "../addButton/AddButton";
 import CountContext from "../../context/CountContext";
 

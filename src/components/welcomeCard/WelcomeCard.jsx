@@ -1,5 +1,5 @@
 import "./WelcomeCard.css";
-import cafePic from "../../assets/cafe.png";
+import cafePic from "/cafe.png";
 
 function WelcomeCard() {
   return (

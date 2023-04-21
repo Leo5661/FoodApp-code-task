@@ -1,6 +1,6 @@
 import React from "react";
 import "./MainTab.css";
-import UpArrow from "../../assets/icons/up_arrow.png";
+import UpArrow from "/icons/up_arrow.png";
 import MainItemCard from "../mainItemCard/MainItemCard";
 import { MainMenuList } from "../../data/MainMenuList";
 

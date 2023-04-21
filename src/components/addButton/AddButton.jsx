@@ -1,6 +1,6 @@
 import "./AddButton.css";
-import Sub from "../../assets/icons/min.png";
-import Add from "../../assets/icons/add.png";
+import Sub from "/icons/min.png";
+import Add from "/icons/add.png";
 
 function AddButton({
   className,
