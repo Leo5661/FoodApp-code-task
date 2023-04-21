@@ -1,6 +1,6 @@
 import React from "react";
 import UpArrow from "../../assets/icons/up_arrow.png";
-import { SpecialMenuList } from "../../data/SpecialMenuList.js";
+import { SpecialMenuList } from "../../data/SpecialMenuList";
 import SpecialMenuCard from "../specialItemCard/SpecialMenuCard.jsx";
 import WelcomeCard from "../welcomeCard/WelcomeCard.jsx";
 import "./SpecialTab.css";

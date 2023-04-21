@@ -38,11 +38,7 @@ function App() {
               className={`navItem ${isActive === index ? "active" : ""}`}
               onClick={() => handelMenuClick(index)}
             >
-              <img
-                className="menuIcon"
-                src={`src/assets/icons/${item.src}`}
-                alt="Bottom nav icon"
-              />
+              {item.src()}
               <div
                 className={`badge ${
                   item.badge && totalItemInCart != 0 ? "showBadge" : ""

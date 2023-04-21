@@ -78,7 +78,7 @@ function MainItemCard({ src, itemName, itemPrice, isVeg, id }) {
 
   return (
     <div className="MainMenuCard">
-      <img className="foodIcon" src={`src/assets/${src}`} alt="Food banner" />
+      {src()}
       <div className="details">
         <div className="itemName">
           <span>{<img src={`${isVeg ? veg : nonVeg}`} />}</span>

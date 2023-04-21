@@ -4,7 +4,6 @@ import veg from "../../assets/icons/veg.png";
 import nonVeg from "../../assets/icons/non_veg.png";
 import AddButton from "../addButton/AddButton";
 import CountContext from "../../context/CountContext";
-import { json } from "react-router-dom";
 
 function SpecialMenuCard({ src, itemName, itemPrice, isVeg, id }) {
   let [count, setCount] = useState(0);
@@ -78,7 +77,7 @@ function SpecialMenuCard({ src, itemName, itemPrice, isVeg, id }) {
 
   return (
     <div className="specialMenuCard">
-      <img className="banner" src={`src/assets/${src}`} alt="Food banner" />
+      {src()}
       <div className="details">
         <div className="itemName">
           <span>{<img src={`${isVeg ? veg : nonVeg}`} />}</span>
