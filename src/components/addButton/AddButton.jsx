@@ -2,7 +2,13 @@ import "./AddButton.css";
 import Sub from "../../assets/icons/min.png";
 import Add from "../../assets/icons/add.png";
 
-function AddButton({ onNegativeClick, onPositiveClick, onClick, count }) {
+function AddButton({
+  className,
+  onNegativeClick,
+  onPositiveClick,
+  onClick,
+  count,
+}) {
   const InitialButton = () => {
     return (
       <div className="initialBtn" onClick={onClick}>
@@ -29,7 +35,7 @@ function AddButton({ onNegativeClick, onPositiveClick, onClick, count }) {
   };
 
   return (
-    <div className="addButton">
+    <div className={`addButton ${className}"`}>
       {count === 0 ? <InitialButton /> : <EditBtn />}
     </div>
   );

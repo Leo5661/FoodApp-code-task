@@ -33,16 +33,13 @@ function TabContainer() {
               return <SpecialTab />;
             case 1:
               return <MainTab />;
-            case 2:
-              return <div>This is third tab</div>;
-            case 3:
-              return <div>This is fourth tab</div>;
-            case 4:
-              return <div>This is fifth tab</div>;
           }
         })()}
       </div>
-      <div className="itemMenuBtn">Menu</div>
+      <div className={`itemMenuBtn ${activeTab === 1 ? "showMenuBtn" : ""}`}>
+        Menu
+      </div>
+      <div className="space"></div>
     </div>
   );
 }

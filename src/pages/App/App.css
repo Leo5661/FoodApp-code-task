@@ -1,20 +1,20 @@
 .container {
     background-color: var(--primaryBg);
-    height: 100vh;
     position: relative;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
 }
 
 .fragment {
+    height: 100vh;
+    height: 100svh;
     width: 100%;
     flex-grow: 1;
+    display: flex;
 }
 
 .bottomNav {
-    flex-grow: 0;
     position: absolute;
     bottom: 0;
     z-index: 10;
@@ -24,7 +24,6 @@
     align-items: center;
     padding: 1rem 0rem;
     flex-wrap: nowrap;
-    border-radius: 0px;
     background: #f1f1f1;
     border-radius: 10px 10px 0px 0px;
 }

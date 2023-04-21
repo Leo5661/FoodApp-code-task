@@ -29,7 +29,7 @@ function Cart() {
         count += Number(item.count);
         setCount(count);
         if (item.count === 0) {
-          let index = currentLocalList.findIndex((item) => item.id === id);
+          let index = currentLocalList.findIndex((item) => item.count === 0);
           currentLocalList.splice(index, 1);
         } else {
           setCurrentList((list) => [...list, item]);
@@ -41,7 +41,7 @@ function Cart() {
     if (previousLocalList.length !== 0) {
       for (const item of previousLocalList) {
         if (item.count === 0) {
-          let index = previousLocalList.findIndex((item) => item.id === id);
+          let index = previousLocalList.findIndex((item) => item.count === 0);
           previousLocalList.splice(index, 1);
         } else {
           setPreviousList((list) => [...list, item]);

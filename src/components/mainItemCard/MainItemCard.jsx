@@ -88,14 +88,15 @@ function MainItemCard({ src, itemName, itemPrice, isVeg, id }) {
           <div className="price">
             <span>&#8377;</span> {itemPrice}
           </div>
-          <AddButton
-            count={count}
-            onClick={handelButtonClick}
-            onNegativeClick={handelNegativeClick}
-            onPositiveClick={handelButtonClick}
-          />
         </div>
       </div>
+      <AddButton
+        className={"marginRight"}
+        count={count}
+        onClick={handelButtonClick}
+        onNegativeClick={handelNegativeClick}
+        onPositiveClick={handelButtonClick}
+      />
     </div>
   );
 }

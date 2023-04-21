@@ -61,6 +61,9 @@ span {
 
 .buttonContainer .price {
     display: flex;
+    font-size: .8rem;
+    font-weight: bold;
+    color: var(--textGray);
     align-items: center;
 
 }

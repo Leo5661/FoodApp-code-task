@@ -8,6 +8,7 @@
 
 .tabList {
     display: flex;
+    flex-grow: 1;
     justify-content: space-around;
     align-items: center;
     overflow-x: scroll;
@@ -19,13 +20,16 @@
 }
 
 .tabName {
-    font-size: .8rem;
+    font-size: .9rem;
+    font-weight: 400;
     color: var(--inactiveText);
     padding-bottom: 0.9rem;
+    transition: all .3s;
 }
 
 .activeTab {
-    font-size: .85rem;
+    font-size: .9rem;
+    font-weight: bold;
     color: var(--textSecondry);
     border-bottom: solid 2.5px var(--textSecondry);
     padding-bottom: 0.9rem;
@@ -36,11 +40,10 @@
 }
 
 .tabBody {
-    height: 100vh;
     overflow-y: hidden;
     overflow-x: scroll;
     display: flex;
-    position: relative;
+    height: 100%;
     justify-content: center;
     align-items: flex-start;
 }
@@ -50,13 +53,29 @@
     border-radius: 50px;
     color: white;
     z-index: 10;
+    flex-grow: 8;
+    display: none;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    left: 50%;
-    bottom: 18%;
+    left: 40%;
+    right: 40%;
+    bottom: 11rem;
     background-color: var(--textLightBlack);
 }
 
+.showMenuBtn {
+    display: flex;
+}
 
 .tabBody::-webkit-scrollbar {
     display: none;
+}
+
+.space {
+    display: block;
+    flex-grow: 1;
+    height: 14rem;
+    width: 100%;
+
 }

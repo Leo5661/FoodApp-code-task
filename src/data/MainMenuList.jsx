@@ -93,4 +93,98 @@ export const MainMenuList = [
       },
     ],
   },
+  {
+    category: "Acai Bowl",
+    itemList: [
+      {
+        id: 15,
+        src: () => (
+          <img
+            className="foodIcon"
+            src={`src/assets/food6.png`}
+            alt="Food banner"
+          />
+        ),
+        itemName: "Chocolate Bowl",
+        itemPrice: "299",
+        isVeg: true,
+      },
+      {
+        id: 16,
+        src: () => (
+          <img
+            className="foodIcon"
+            src={`src/assets/food2.webp`}
+            alt="Food banner"
+          />
+        ),
+
+        itemName: "Sunset Acai Bowl",
+        itemPrice: "299",
+        isVeg: true,
+      },
+      {
+        id: 17,
+        src: () => (
+          <img
+            className="foodIcon"
+            src={`src/assets/food3.webp`}
+            alt="Food banner"
+          />
+        ),
+
+        itemName: "Paneer Tikka Bowl",
+        itemPrice: "299",
+        isVeg: true,
+      },
+    ],
+  },
+
+  {
+    category: "Drinks",
+    itemList: [
+      {
+        id: 18,
+        src: () => (
+          <img
+            className="foodIcon"
+            src={`src/assets/food6.png`}
+            alt="Food banner"
+          />
+        ),
+
+        itemName: "Chocolate Bowl",
+        itemPrice: "299",
+        isVeg: true,
+      },
+      {
+        id: 19,
+        src: () => (
+          <img
+            className="foodIcon"
+            src={`src/assets/food2.webp`}
+            alt="Food banner"
+          />
+        ),
+
+        itemName: "Sunset Acai Bowl",
+        itemPrice: "299",
+        isVeg: true,
+      },
+      {
+        id: 20,
+        src: () => (
+          <img
+            className="foodIcon"
+            src={`src/assets/food3.webp`}
+            alt="Food banner"
+          />
+        ),
+
+        itemName: "Paneer Tikka Bowl",
+        itemPrice: "299",
+        isVeg: true,
+      },
+    ],
+  },
 ];
